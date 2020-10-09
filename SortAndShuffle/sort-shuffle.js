@@ -19,7 +19,7 @@ function shuffle(list) {
     return list;
 }
 function sortList(list) {
-  let sorted_list = list.sort(function (a, b) {
+  let sorted_list = list.sort((a, b) => {
     return a.value - b.value;
   });
   return sorted_list;
