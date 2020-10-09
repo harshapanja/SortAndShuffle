@@ -3,9 +3,8 @@ function sortShuffleNodes(sort) {
   var child_nodes = list.children,i = 0;
   child_nodes = Array.prototype.slice.call(child_nodes); // make array
   child_nodes = sort ? sortList(child_nodes) : shuffle(child_nodes);
-  while (i < child_nodes.length) {
+  for(let i=0; i<child_nodes.length; i++) {
     list.appendChild(child_nodes[i]);
-    i = i+1;
   }
 }
 function shuffle(list) {
